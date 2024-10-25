@@ -18,10 +18,11 @@ func main() {
 	}
 	score = strings.TrimSpace(score)                //줄바꿈,띄어쓰기, 탭 등 제거
 	realScore, _ := strconv.ParseInt(score, 16, 32) //정수형 32비트 타입으로 형변환, 16진수 입력
+	var grade string
 	if realScore >= 90 {
-		grade := "A"
+		grade = "A"
 	} else {
-		grade := "BCDF"
+		grade = "BCDF"
 	}
 	fmt.Printf("%d점은 %s등급 입니다.\n", realScore, grade)
 }
