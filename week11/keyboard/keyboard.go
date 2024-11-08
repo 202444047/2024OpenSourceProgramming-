@@ -11,6 +11,7 @@ func GetInteger() (int, error) {
 	in := bufio.NewReader(os.Stdin)
 	a, err := in.ReadString('\n')
 	if err != nil {
+		// log.Fatal(err)
 		return 0, err
 	}
 
